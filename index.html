@@ -5,77 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marie Frénot - Webdesigner</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/Logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-MF.svg">
     <script src="https://kit.fontawesome.com/add721353d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 
         <!-- SLIDER JAUNE -->
-    <header>
+    <header id="slider">
         <div class="slider-yellow">
-            <img class="logo md-fixed-top" src="assets/img/Logo.png" alt="logo">
-        </div>
-        <div class="d-none d-md-flex fixed-bottom pb-4 ps-5">
-            <div class="iconsPro ">
-                <a href="https://www.linkedin.com/in/marie-fr%C3%A9not-26694bba/">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="mailto:frenotm@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
+            <a  href="#">
+                <img class="logo lg-fixed-top"  src="assets/img/logo-MF.svg" alt="logo Marie Frénot">
+            </a>
+            <div class="d-none d-lg-flex fixed-bottom pb-4 ps-5">
+                <div class="iconsPro ">
+                    <a href="https://www.linkedin.com/in/marie-fr%C3%A9not-26694bba/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:frenotm@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
     <!-- MENU -->
-    <nav>
+    <nav id="navbar">
         <div class= "icons">
             <i class="fa-solid fa-bars menuBurger"></i>
         </div>
         <div class="menu">
             <div class="menuItems"><a href="index.html">Qui suis-je ?</a></div>
-            <div class="menuItems"><a href="portoflio.html">Portfolio</a></div>
+            <div class="menuItems"><a href="portfolio.html">Portfolio</a></div>
         </div>
     </nav>
 
-    <main>
+    <main id = "main">
         <div class="container-fluid ">
             <!-- Intro -->
-            <div class="row">
-                <!-- PHOTO -->
-                <div class=" col-md-3 offset-md-2">
-                    <img class="img-profil" src="assets/img/Photo-CV.png" alt="Photo-de-profil">
-                </div>
-                
-                <!-- INFOS -->
-                <div class="infos col-12 col-md-6 offset-md-1   ">
-                    <h1>
-                        <div class="fw-bold ">MARIE</div>
-                        <div class="fw-bold">FRENOT</div>
-                    </h1>
-                    <div class="my-3 fw-bold fs-4">Webdesigner │ Toulon </div>
-                    <div>
-                        <p>Amoureuse de design graphique, je suis actuellement en Formation Concepteur Designer UI à la Manu. 
-                            Mes ingrédients secrets ? Une bonne dose de créativité et de <span class="cursiveYellow">  bonne humeur !</span></p>
+            <section id="me">
+                <div class="row">
+                    <!-- PHOTO -->
+                    <div class=" col-md-3 offset-md-2">
+                        <img class="img-profil" src="assets/img/Photo-CV.png" alt="Photo-de-profil">
                     </div>
-                <!-- BOUTONS -->
-                    <div class="d-flex gap-3">
-                        <button type="button" class=" btn btnPortfolio btn-rounded">PORTFOLIO</button>
-                        <a href="#presentation" class=" btn btnCV btn-rounded">MON CV</a>
-                    </div>
-                <!-- CHEVRON -->
-                    <i class="fa-solid fa-angle-down chevron"></i>
+                    
+                    <!-- INFOS -->
+                    <div class="infos col-lg-6 offset-lg-1   ">
+                        <h1>
+                            <div class="fw-bold ">MARIE</div>
+                            <div class="fw-bold">FRENOT</div>
+                        </h1>
+                        <div class="my-3 fw-bold fs-4">Webdesigner │ Toulon </div>
+                        <div>
+                            <p>Amoureuse de design graphique, je suis actuellement en Formation Concepteur Designer UI à la Manu. 
+                                Mes ingrédients secrets ? Une bonne dose de créativité et de <span class="cursiveYellow">  bonne humeur !</span></p>
+                        </div>
+                    <!-- BOUTONS -->
+                        <div class="d-flex gap-3">
+                            <a href="portfolio.html" class=" btn btnPortfolio btn-rounded">PORTFOLIO</a>
+                            <a href="#presentation" class=" btn btnCV btn-rounded">MON CV</a>
+                        </div>
+                    <!-- CHEVRON -->
                 </div>
-            </div>
+                <i class="fa-solid fa-angle-down chevron" href="#presentation"></i>
+            </section>
 
             <!-- Presentation -->
             <section id="presentation">
                 <div class="row"> 
                     <!-- HI -->
-                    <div class=" intro col-12 col-md-6 offset-md-4 ">
+                    <div class=" intro col-12 col-lg-6 offset-lg-4 ">
                         <h2 class="hi">Hi!</h2>
                         <div class="welcome-text">
                             <p>Bienvenue dans mon univers. Un petit tour d’horizon pour mieux me connaître ?</p>
@@ -84,7 +91,7 @@
                             </div>
                     </div>
                     <!-- MOTS DESCRIPTIFS -->
-                    <div class="col-12 col-md-7 offset-md-5 mt-md-5 ">
+                    <div class="col-12 col-lg-7 offset-lg-5 mt-lg-5 ">
                         <div class="adjectives">
                             <div class="line1"><span class="yellow hover">créative</span> <span class="hover">baroudeuse </span> <span class="yellow hover">polyvalente</span> </div>
                             <div class="line2"><span class="hover">organisée</span><span class="yellow hover"> joviale</span><span class="hover"> signe </span> <span class="hover">astro </span> <span class="hover">poisson</span> </span> </div>
@@ -99,7 +106,10 @@
             <section id="competences">
                 <div class="row mt-5 px-5">
                     <div class="skills">
-                        <h3 class="collapsible fw-bold fs-4">COMPETENCES</h3>
+                        <div class=" collapsible  d-flex flex-row">
+                            <h3 class="fw-bold fs-4">COMPETENCES</h3>
+                            <i class=" flex-fill d-lg-none fa-solid fa-chevron-down chevron-skills open"></i>
+                        </div>
                         <div class="content gridZone">
                             <div class="zone1">
                                 
@@ -171,7 +181,7 @@
                                 </div> 
                                 <div>Github</div>
                                 <div class="progress">
-                                    <div class="progressBar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progressBar" role="progressbar" style="width: 50%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div> 
                             </div>
                         </div>
@@ -183,11 +193,14 @@
             <!-- About Me -->
             <section id="about">
                 <!-- ATOUTS / EXPERIENCES / FORMATION -->
-                <div class="row mt-md-5 px-5 mb-5">
+                <div class="row mt-lg-5 px-5 mb-5">
                     <div class="col-12 skills gridZone2">
                         <!--ATOUTS-->
                         <div class="zone2-1"> 
-                            <h3 class="collapsible fw-bold fs-4">ATOUTS & SAVOIR-FAIRE</h3>
+                            <div class=" collapsible  d-flex flex-row">
+                                <h3 class="fw-bold fs-4">ATOUTS & SAVOIR-FAIRE</h3>
+                                <i class=" flex-fill d-lg-none fa-solid fa-chevron-down chevron-skills open"></i>
+                            </div>
                             <div class="content">
                                 <div>Gestion de projet</div>
                                 <div>Leadership</div>
@@ -201,14 +214,17 @@
                         
                         <!--EXPERIENCES PROFESSIONNELLES-->
                         <div class="zone2-2"> 
-                            <h3 class="collapsible fw-bold fs-4">EXPERIENCES PROFESSIONNELLES</h3>
+                            <div class=" collapsible  d-flex flex-row">
+                                <h3 class="fw-bold fs-4">EXPERIENCES PROFESSIONNELLES</h3>
+                                <i class=" flex-fill d-lg-none fa-solid fa-chevron-down chevron-skills open"></i>
+                            </div>
                             <div class="content">
                                 <div class="cardPro"> <!--Vente-->
                                     <div class="fw-bold">CONSEILLERE DE VENTE</div> 
                                     <div> <span class="date">2021 (6mois)</span>  │ Toulon</div>
                                     <div>Navarette Gastronomie - Epicerie fine et restauration
                                         aux Halles de Toulon</div>
-                                    <i class="fa-solid fa-chevron-down open"></i>
+                                    <i class="fa-solid fa-chevron-down chevron-card open"></i>
                                         <ul class="contentPro">
                                             <li>Accueil, conseil et vente clientèle</li>
                                             <li>Entretien et optimisation du corner de vente</li>    
@@ -225,7 +241,7 @@
                                     <div> <span class="date">2019-2020</span>  │ Tahiti</div>
                                     <div>Vélo Club de Tahiti - Course cycliste la Ronde
                                         Tahitienne, Challenge Cyclosport OPT</div>
-                                    <i class="fa-solid fa-chevron-down open"></i>
+                                    <i class="fa-solid fa-chevron-down chevron-card open"></i>
                                         <ul class="contentPro">
                                             <li>Mise en place et suivi projets</li>
                                             <li>Coordination des prestataires</li>    
@@ -240,7 +256,7 @@
                                     <div class="fw-bold">DIRECTRICE OPERATIONNEL - CHEFFE DE PROJETS</div>
                                     <div> <span class="date">2018</span>  │ Paris</div>
                                     <div>Very Good Moment - Plateforme de marketing Expérientiel</div>
-                                    <i class="fa-solid fa-chevron-down open"></i>
+                                    <i class="fa-solid fa-chevron-down chevron-card open"></i>
                                         <ul class="contentPro">
                                             <li>Management d’équipe : recrutement, gestion et animation d’une équipe de 6 personnes</li>
                                             <li>Coordination, conduite et planification des campagnes</li>    
@@ -256,7 +272,7 @@
                                     <div class="fw-bold">RESPONSABLE MARKETPLACE</div>
                                     <div> <span class="date">2017</span>  │ Chiang Mai, Thaïlande <span class="cursiveYellow">Stage 6 mois</span></div>
                                     <div>Klim Technologies - E-commerce en matériel informatique</div>
-                                    <i class="fa-solid fa-chevron-down open"></i>
+                                    <i class="fa-solid fa-chevron-down chevron-card open"></i>
                                         <ul class="contentPro">
                                             <li>Développement des marketplaces internationaux et français</li>
                                             <li>Gestion Service Client et Service après-vente français</li>    
@@ -267,7 +283,7 @@
                                     <div class="fw-bold">ASSISTANTE CHEF DE PROJETS</div>
                                     <div> <span class="date">2016</span>  │ Paris <span class="cursiveYellow">Stage 6 mois</span></div>
                                     <div>Very Good Moment - Plateforme de marketing Expérientiel</div>
-                                    <i class="fa-solid fa-chevron-down open"></i>
+                                    <i class="fa-solid fa-chevron-down chevron-card open"></i>
                                         <ul class="contentPro">
                                             <li>Négociation et réalisation des achats</li>
                                             <li>Suivi logistique et opérationnel (stocks, expéditions)</li>
@@ -280,7 +296,10 @@
 
                         <!--FORMATION-->
                         <div class="zone2-3"> 
-                            <h3 class="collapsible fw-bold fs-4">FORMATION </h3>
+                            <div class=" collapsible  d-flex flex-row ">
+                                <h3 class="fw-bold fs-4">FORMATION</h3>
+                                <i class=" flex-fill d-lg-none fa-solid fa-chevron-down chevron-skills open"></i>
+                            </div>
                             <div class="content">
                                 <div class="formation">
                                     <div class="fw-bold">LA MANU</div>
@@ -313,15 +332,15 @@
             </section>
 
             <!-- See you soon -->
-            <section id="SeeYou">
-                <div class="gridZone3">
-                    <!-- CV download -->
+            <section id="seeYou">
+                <div class=" gridZone3">
+                    <!--CV download -->
                     <div class="zone3-1">
                         <div class="fw-bold fs-4" >PAR ICI POUR</div>
                         <div class="fw-bold fs-4">RECUPERER MON CV</div>
                         <a type="button" class="my-5 btn btnDownload btn-rounded" href="assets/img/CV - Marie Frénot.pdf" target="_blank">TELECHARGER</a>
                         <!-- Icones contact mobile -->
-                        <div class="iconsEnd d-md-none">
+                        <div class="iconsEnd d-lg-none">
                             <a href="https://www.linkedin.com/in/marie-fr%C3%A9not-26694bba/">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
@@ -331,7 +350,7 @@
                         </div>
                     </div>
                     <!-- Arrow -->
-                    <div class="zone3-2 d-none d-md-block ">
+                    <div class="zone3-2 d-none d-lg-block ">
                         <img src="assets/img/arrow.svg" alt="arrow" class="iconeArrow">
                     </div>
                     <!-- Img SeeU -->
@@ -346,4 +365,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/boot strap@5.0.2/dist/js/bootstrap.bundle. min.js" integrity="sha384- MrcW6ZMFYlzcLA8Nl+NtUVF0sA7Ms XsP1UyJoMp4YLEuNSfAP+JcXn/tWtIa xVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>
